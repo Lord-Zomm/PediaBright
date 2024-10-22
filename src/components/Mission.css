@@ -1,0 +1,68 @@
+.mission-container {
+  background-image: url('/images/color_circles.png'); /* Use the background image */
+  background-size: cover;
+  background-position: center;
+  height: 80vh; /* Set to full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mission-content {
+  max-width: 800px; /* Limits the width of the text content */
+  color: #fff; /* White text */
+  text-align: left;
+}
+
+.mission-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .mission-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .mission-text {
+    font-size: 18px;
+    line-height: 1.6; /* Adds spacing between lines for readability */
+    font-weight: normal;
+  }
+
+
+/* Responsive Design */
+@media screen and (max-width: 960px) {
+  .mission-content {
+    padding: 20px;
+  }
+
+  .mission-title {
+    font-size: 36px;
+  }
+
+  .mission-subtitle {
+    font-size: 20px;
+  }
+
+  .mission-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mission-title {
+    font-size: 30px;
+  }
+
+  .mission-subtitle {
+    font-size: 18px;
+  }
+
+  .mission-text {
+    font-size: 14px;
+  }
+}

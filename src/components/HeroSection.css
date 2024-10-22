@@ -1,0 +1,104 @@
+/* Full Width Background Image */
+img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+/* Main Container for Hero Section */
+.hero-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px; /* Adjust padding as needed */
+  padding-bottom: 20px; /* Add bottom padding to prevent overlap */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.0);
+}
+
+/* Text Styling for Hero Section */
+.hero-text {
+  z-index: 1; /* Ensures the text is above the image */
+  text-align: center;
+}
+
+.hero-text h1 {
+  color: #014DAB;
+  font-size: 70px;
+  margin: 0; /* Removes any default margins */
+  line-height: 1.2; /* Adjusts spacing between lines */
+}
+
+/* Image Styling */
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-top: -200px; /* Adjust space between text and image */
+}
+
+/* Button Styles */
+.hero-btns {
+  margin-top: 32px;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 960px */
+@media screen and (max-width: 960px) {
+  .hero-text h1 {
+    font-size: 50px; /* Maintain large font size for smaller screens */
+    margin-top: 20px; /* Adjust spacing for mobile */
+    line-height: .8; /* Adjusts spacing between lines */
+  }
+
+  .hero-image {
+    margin-top: -120px; /* Adjust space between text and image for mobile */
+  }
+
+  .hero-container {
+    padding-top: 60px; /* Adjust padding on smaller screens */
+    padding-bottom: 20px; /* Adjust bottom padding on smaller screens */
+  }
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 40px; /* Further adjust font size for small screens */
+    margin-top: 20px; /* Ensure proper spacing */
+    line-height: .75; /* Adjusts spacing between lines */
+  }
+
+  .hero-image {
+    margin-top: -80px; /* Ensure enough space between text and image */
+  }
+
+  .hero-container {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .hero-container > p {
+    font-size: 30px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

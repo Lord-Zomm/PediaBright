@@ -1,0 +1,163 @@
+/* Main Navbar Styles */
+.navbar {
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(253, 251, 251) 100%);
+  display: flex;
+  flex-direction: column; /* Stacks logo and links vertically */
+  justify-content: center;
+  align-items: center; /* Aligns everything to the center */
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding-top: 21px;
+}
+
+.navbar-logo {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Ensures the logo is centered within its container */
+  margin: 0; /* Ensure no extra margins are applied */
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content within the container */
+  justify-content: center;
+  width: 100%; /* Ensures the container takes the full width */
+  padding: 0; /* Reset any padding */
+}
+
+
+.navbar-logo-img {
+  width: 200px; /* Adjust size of the logo */
+  height: auto;
+  padding-bottom: 7px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+/* Navigation Item */
+.nav-item {
+  height: 80px;
+}
+
+/* Navigation Links */
+.nav-links {
+  color: #014DAB;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+.nav-links:hover {
+  border-bottom: 4px solid #014DAB;
+  transition: all 0.2s ease-out;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+}
+
+.fa-bars {
+  color: #014DAB;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 960px) {
+  .navbar {
+    padding: 30px 10px;
+  }
+
+  .navbar-container {
+    flex-direction: column; /* Ensure items stack in mobile view */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #fff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #014DAB;
+    color: #fff;
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 5px;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 50%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #014DAB;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #014DAB;
+    padding: 14px 20px;
+    border: 1px solid #014DAB;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #014DAB;
+    color: #fff;
+    transition: 250ms;
+  }
+}
