@@ -1,0 +1,85 @@
+.book-container {
+  background-image: url('/images/white_triangles.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  /* background-color: rgba(1, 77, 171, 1); */
+  position: relative;
+  display: flex;
+  justify-content: center; /* Space the buttons and book evenly */
+  align-items: center;
+  padding: 20px;
+  height: 90vh;
+}
+
+.book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%; /* Adjust to give space for buttons on the sides */
+  height: auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-page {
+  width: 100%;
+  height: auto;
+}
+
+.nav-button {
+  background-color: rgba(1, 77, 171, 0.8);
+  color: white;
+  border: none;
+  font-size: 7.5rem; /* Adjust font size for the arrow */
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+
+  /* Center the arrow vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 10px;
+}
+
+.nav-button:hover {
+  background-color: rgba(1, 77, 171, 1);
+}
+
+.nav-button.left {
+  margin-right: 20px;
+}
+
+.nav-button.right {
+  margin-left: 20px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+
+  .book {
+    width: 80%;
+  }
+
+  .nav-button {
+    font-size: 5rem;
+    padding-top: 5px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+
+  .nav-button {
+    font-size: 5rem;
+    padding-top: 5px;
+    width: 50px;
+    height: 50px;
+  }
+}
