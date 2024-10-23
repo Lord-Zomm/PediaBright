@@ -2,13 +2,26 @@
   background-image: url('/images/white_triangles.jpg'); /* Background image */
   background-size: cover;
   background-position: center;
-  /* background-color: rgba(1, 77, 171, 1); */
   position: relative;
   display: flex;
-  justify-content: center; /* Space the buttons and book evenly */
+  flex-direction: column; /* Align items vertically */
+  justify-content: center;
   align-items: center;
   padding: 20px;
   height: 90vh;
+}
+
+.book-heading {
+  font-size: 2rem;
+  color: #014DAB;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.book-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .book {
@@ -60,7 +73,6 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
-
   .book {
     width: 80%;
   }
@@ -71,15 +83,27 @@
     width: 60px;
     height: 60px;
   }
+
+  .book-heading {
+    font-size: 1.7rem;
+    color: #014DAB;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
 }
 
 /* Mobile Responsive */
 @media screen and (max-width: 600px) {
-
   .nav-button {
-    font-size: 5rem;
+    font-size: 3.5rem;
     padding-top: 5px;
     width: 50px;
     height: 50px;
+  }
+
+  .book-heading {
+    font-size: .8rem;
+    color: #014DAB;
+    margin-bottom: 40px;
   }
 }

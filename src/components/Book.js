@@ -35,15 +35,18 @@ const Book = () => {
 
   return (
     <div className="book-container">
-      <button onClick={goToPreviousPage} className="nav-button left" style={{paddingRight: '5px'}}>
-        &#8249;
-      </button>
-      <div className="book">
-        <img src={pages[currentPage]} alt={`Page ${currentPage + 1}`} className="book-page" />
+      <h2 className="book-heading">Get a preview of the first book in our CDK series!</h2>
+      <div className="book-navigation">
+        <button onClick={goToPreviousPage} className="nav-button left" style={{paddingRight: '5px'}}>
+          &#8249;
+        </button>
+        <div className="book">
+          <img src={pages[currentPage]} alt={`Page ${currentPage + 1}`} className="book-page" />
+        </div>
+        <button onClick={goToNextPage} className="nav-button right" style={{paddingLeft: '5px'}}>
+          &#8250;
+        </button>
       </div>
-      <button onClick={goToNextPage} className="nav-button right" style={{paddingLeft: '5px'}}>
-        &#8250;
-      </button>
     </div>
   );
 };

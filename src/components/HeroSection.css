@@ -102,3 +102,23 @@ img {
     width: 100%;
   }
 }
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 450px) {
+  .hero-text h1 {
+    font-size: 40px; /* Further adjust font size for small screens */
+    margin-top: 20px; /* Ensure proper spacing */
+    line-height: .75; /* Adjusts spacing between lines */
+  }
+
+  .hero-image {
+    margin-top: -60px; /* Ensure enough space between text and image */
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .hero-image {
+    margin-top: -40px; /* Ensure enough space between text and image */
+  }
+}
