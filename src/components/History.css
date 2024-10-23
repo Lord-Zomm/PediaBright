@@ -15,13 +15,12 @@
     padding: 40px;
     border-radius: 10px;
     text-align: center;
-    max-width: 700px;
     width: 100%;
 }
 
 /* Apply fade-in/fade-out animation only to the text */
 .history-text {
-    font-size: 2.1rem; /* Adjust text size as needed */
+    font-size: 2.3rem; /* Adjust text size as needed */
     color: #ffffff; /* Change text color */
     font-weight: bold; /* Adjust font weight if needed */
     line-height: 1.5; /* Control line height */
@@ -82,14 +81,14 @@
 }
 
 /* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .history-content {
         padding: 0px;
         font-size: 1rem;
     }
 
     .history-text {
-        font-size: 1.8rem; /* Adjust text size for mobile */
+        font-size: 2rem; /* Adjust text size for mobile */
     }
 
     .arrow-left,
@@ -105,24 +104,30 @@
 
 @media screen and (max-width: 640px) {
     .history-text {
-        font-size: 1.4rem; /* Adjust text size for mobile */
+        font-size: 1.7rem; /* Adjust text size for mobile */
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 560px) {
+    .history-text {
+        font-size: 1.5rem; /* Adjust text size for mobile */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .history-text {
+        font-size: 1.3rem; /* Adjust text size for mobile */
+    }
+}
+
+@media screen and (max-width: 440px) {
     .history-text {
         font-size: 1.1rem; /* Adjust text size for mobile */
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 377px) {
     .history-text {
-        font-size: .9rem; /* Adjust text size for mobile */
-    }
-}
-
-@media screen and (max-width: 330px) {
-    .history-text {
-        font-size: .9rem; /* Adjust text size for mobile */
+        font-size: 1rem; /* Adjust text size for mobile */
     }
 }
