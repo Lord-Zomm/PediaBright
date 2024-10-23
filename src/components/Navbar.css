@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center; /* Aligns everything to the center */
   font-size: 1.2rem;
-  position: sticky;
+  position: static;
   top: 0;
   z-index: 999;
   padding-top: 21px;

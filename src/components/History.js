@@ -3,7 +3,7 @@ import './History.css';
 
 const pages = [
   {
-    content: "PediaBright was founded by four innovative college students, who<br />shared a common goal of supporting<br />kid’s through their healthcare journey.<br />Through extensive market research,<br />PediaBright’s founders identified a root<br />problem in pediatric healthcare",
+    content: "PediaBright was founded by four<br />innovative college students, who<br />shared a common goal of supporting<br />kid’s through their healthcare journey.<br />Through extensive market research,<br />PediaBright’s founders identified a root<br />problem in pediatric healthcare",
   },
   {
     content: "The Problem:<br />Communication barriers between<br />pediatric patients and providers<br />results in children with complex<br />health conditions feeling confused<br />& alone.",

@@ -44,5 +44,48 @@
 }
 
 .cdkseries-button:hover {
-  background-color: #014DAB;
+  background-color: #012F6B;
+}
+
+/* Media query for tablets and smaller screens */
+@media screen and (max-width: 768px) {
+  .cdkseries-content {
+    padding: 30px; /* Reduce padding */
+    max-width: 90%; /* Adjust max-width */
+  }
+
+  .cdkseries-title {
+    font-size: 2.7rem; /* Reduce font size */
+  }
+
+  .cdkseries-description {
+    font-size: 1.35rem; /* Reduce font size */
+    margin-bottom: 30px; /* Reduce margin */
+  }
+
+  .cdkseries-button {
+    padding: 12px 25px; /* Adjust button padding */
+    font-size: 1rem; /* Reduce button font size */
+  }
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 480px) {
+  .cdkseries-content {
+    padding: 20px; /* Further reduce padding */
+  }
+
+  .cdkseries-title {
+    font-size: 2.4rem; /* Reduce title font size */
+  }
+
+  .cdkseries-description {
+    font-size: 1.2rem; /* Reduce description font size */
+    margin-bottom: 20px; /* Reduce margin */
+  }
+
+  .cdkseries-button {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 0.9rem; /* Reduce button font size */
+  }
 }

@@ -89,7 +89,7 @@
     }
 
     .history-text {
-        font-size: 1.2rem; /* Adjust text size for mobile */
+        font-size: 1.8rem; /* Adjust text size for mobile */
     }
 
     .arrow-left,
@@ -100,5 +100,29 @@
     .circle {
         width: 10px;
         height: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .history-text {
+        font-size: 1.4rem; /* Adjust text size for mobile */
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .history-text {
+        font-size: 1.1rem; /* Adjust text size for mobile */
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .history-text {
+        font-size: .9rem; /* Adjust text size for mobile */
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .history-text {
+        font-size: .7rem; /* Adjust text size for mobile */
     }
 }

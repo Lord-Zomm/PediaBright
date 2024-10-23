@@ -42,3 +42,203 @@
   color: #fff;
   font-size: 100px;
 }
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap; /* This ensures the items wrap on smaller screens */
+}
+
+.team-member {
+  text-align: center;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 77, 171, 0.6); /* Semi-transparent dark overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth fade-in effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.team-member:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.bio-text {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* For smaller screens */
+@media screen and (max-width: 1240px) {
+  .bio-text {
+    font-size: 1rem;
+  }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 1200px) {
+  .bio-text {
+    font-size: 1rem;
+  }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 1160px) {
+  .bio-text {
+    font-size: .9rem;
+  }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 1060px) {
+  .bio-text {
+    font-size: .8rem;
+  }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 960px) {
+  .bio-text {
+    font-size: .8rem;
+  }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 940px) {
+  .bio-text {
+    font-size: .7rem;
+  }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 860px) {
+  .bio-text {
+    font-size: .65rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bio-text {
+    font-size: .6rem;
+  }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+  .team-member {
+    width: 50%; /* Each image takes up full width */
+    margin-bottom: 20px; /* Add some space between the images */
+    border-radius: 20px;
+  }
+
+  .bio-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .bio-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .bio-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bio-text {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bio-text {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .bio-text {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .bio-text {
+    font-size: .6rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .team-member {
+    width: 100%; /* Each image takes up full width */
+    margin-bottom: 20px; /* Add some space between the images */
+    border-radius: 20px;
+  }
+
+  .bio-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .bio-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .bio-text {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .bio-text {
+    font-size: .6rem;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .bio-text {
+    font-size: .4rem;
+  }
+}
+
+@media screen and (max-width: 150px) {
+  .bio-text {
+    font-size: .2rem;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  .bio-text {
+    font-size: .1rem;
+  }
+}
