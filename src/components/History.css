@@ -84,7 +84,7 @@
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     .history-content {
-        padding: 20px;
+        padding: 0px;
         font-size: 1rem;
     }
 
@@ -123,6 +123,6 @@
 
 @media screen and (max-width: 330px) {
     .history-text {
-        font-size: .7rem; /* Adjust text size for mobile */
+        font-size: .9rem; /* Adjust text size for mobile */
     }
 }
