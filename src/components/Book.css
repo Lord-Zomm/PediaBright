@@ -1,5 +1,5 @@
 .book-container {
-  background-image: url('/images/white_triangles.jpg'); /* Background image */
+  background-image: url('/images/light_blue.jpg'); /* Background image */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -8,12 +8,12 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  height: 90vh;
+  height: 100vh;
 }
 
 .book-heading {
   font-size: 2rem;
-  color: #014DAB;
+  color: #fff;
   margin-bottom: 40px;
   margin-top: 40px;
 }

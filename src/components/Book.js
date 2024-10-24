@@ -44,7 +44,7 @@ const Book = () => {
 
   return (
     <div className="book-container">
-      <h2 className="book-heading">Get a preview of the first book in our CKD series!</h2>
+      <h2 className="book-heading">Preview the first book in our CKD series!</h2>
 
       <div className="book-navigation">
         {/* Conditionally render based on screen size */}
