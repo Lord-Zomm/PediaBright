@@ -1,0 +1,251 @@
+.instagram-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 60px;
+    text-align: left;
+    color: #3b117b;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    object-fit: contain; /* Ensure the image isn't cropped */
+    margin-right: 20px;
+    margin-bottom: 15px;
+  }
+
+.profile-details {
+    flex-grow: 1;
+}
+
+.follow-button {
+    background-color: #7854a4;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -30px;
+}
+
+.follow-button:hover {
+    background-color: #9166c6;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.post {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Forces a square aspect ratio */
+    overflow: hidden;
+}
+
+.post img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(82, 44, 138, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center; /* Center the text */
+    font-size: 1.3rem;
+
+}
+
+.post:hover .hover-overlay {
+    opacity: 1;
+}
+
+.load-more {
+    margin: 60px -0px;;;
+    padding: 15px 30px;
+    background-color: #7854a4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.load-more:hover {
+    background-color: #8a61bc;
+}
+
+.post-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(144, 105, 180, 0.8); /* Semi-transparent purple background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    /*padding: 20px;*/
+    text-align: left;
+    border-radius: 10px;
+    max-width: 980px; /* Adjust to make the post bigger */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.close-modal {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+    transform: scaleX(1.25); /* Scales the X 1.5 times its original size */
+    font-weight: lighter;
+}
+
+.modal-navigation {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 42.5%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.modal-navigation button {
+    background: none;
+    border: none;
+    font-size: 5rem;
+    cursor: pointer;
+    color: white;
+    padding: 0px;
+    opacity: 0.8;
+}
+
+.modal-navigation button:hover {
+    opacity: 1;
+}
+
+.modal-navigation .left-arrow {
+    position: absolute;
+    left: -50px;
+}
+
+.modal-navigation .right-arrow {
+    position: absolute;
+    right: -50px;
+}
+
+@media screen and (max-width: 900px) {
+    .hover-overlay {
+        font-size: 1rem;
+    }
+}
+
+
+/* Mobile responsiveness */
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .posts-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+    }
+
+    .profile-info {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align all items */
+        text-align: center; /* Center the text */
+        justify-content: center; /* Align content centrally */
+        margin-bottom: 40px; /* Adjust the bottom margin */
+        margin-top: 20px;
+    }
+
+    .profile-picture {
+        margin-bottom: 10px; /* Add some space below the profile picture */
+        margin-left: 20px;
+    }
+
+    .profile-details {
+        margin-bottom: 10px; /* Add space between profile details and follow button */
+    }
+
+    .follow-button {
+        margin-top: 10px; /* Space between profile details and the follow button */
+        padding: 10px 20px; /* Adjust button padding for smaller screens */
+        width: 100%; /* Make the button take the full width */
+        max-width: 200px; /* Limit the max width of the button */
+    }
+
+    .hover-overlay {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .posts-grid {
+        grid-template-columns: repeat(1, 1fr); /* Adjust for smaller screens */
+    }
+    .hover-overlay {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .hover-overlay {
+        font-size: .8rem;
+    }
+}
+

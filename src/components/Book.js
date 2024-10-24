@@ -35,7 +35,7 @@ const Book = () => {
 
   return (
     <div className="book-container">
-      <h2 className="book-heading">Get a preview of the first book in our CDK series!</h2>
+      <h2 className="book-heading">Get a preview of the first book in our CKD series!</h2>
       <div className="book-navigation">
         <button onClick={goToPreviousPage} className="nav-button left" style={{paddingRight: '5px'}}>
           &#8249;
