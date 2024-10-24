@@ -89,3 +89,28 @@
     font-size: 0.9rem; /* Reduce button font size */
   }
 }
+
+/* Media query for mobile phones */
+@media screen and (max-width: 400px) {
+  .cdkseries-content {
+    padding: 20px; /* Further reduce padding */
+  }
+
+  .cdkseries-title {
+    font-size: 2rem; /* Reduce title font size */
+  }
+
+  .cdkseries-description {
+    font-size: 1rem; /* Reduce description font size */
+    margin-bottom: 20px; /* Reduce margin */
+  }
+
+  .cdkseries-button {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 0.9rem; /* Reduce button font size */
+  }
+
+  .cdkseries-container {
+    height: 60vh;
+  }
+}
