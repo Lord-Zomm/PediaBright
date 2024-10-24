@@ -16,6 +16,20 @@
   font-size: 3rem;
 }
 
+html {
+  height: 150%; /* Ensure full height for the html element */
+  background-color: #014DAB; /* The background color you want behind your website */
+}
+
+body {
+  min-height: 100%; /* Ensure body stretches to at least full height */
+  margin: 0;
+  padding: 0;
+  background-color: white; /* Keep the body background white for your content */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
 .services {
   background-image: url('/images/img-2.jpg');
   background-position: center;
@@ -179,7 +193,7 @@
 
 @media screen and (max-width: 500px) {
   .bio-text {
-    font-size: .8rem;
+    font-size: .75rem;
   }
 }
 
@@ -219,7 +233,7 @@
   }
 }
 
-@media screen and (max-width: 250px) {
+@media screen and (max-width: 270px) {
   .bio-text {
     font-size: .6rem;
   }
