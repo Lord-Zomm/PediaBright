@@ -17,12 +17,12 @@
 }
 
 html {
-  height: 150%; /* Ensure full height for the html element */
+  height: 150%; /* Ensure full height for the html element sdfa */
   background-color: #014DAB; /* The background color you want behind your website */
 }
 
 body {
-  min-height: 100%; /* Ensure body stretches to at least full height */
+  min-height: 150%; /* Ensure body stretches to at least full height */
   margin: 0;
   padding: 0;
   background-color: white; /* Keep the body background white for your content */
